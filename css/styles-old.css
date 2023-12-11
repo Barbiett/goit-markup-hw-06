@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFF;
@@ -52,7 +52,8 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
+ } */
+
 
 /* header */
 .page-header-container {
@@ -166,7 +167,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 188px 0;
+    padding: 72px 16px;
     margin: 0 auto;
 
 
