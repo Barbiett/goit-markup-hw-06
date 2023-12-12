@@ -371,7 +371,7 @@ img {
 
 .application-category {
     padding: 32px 16px;
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border: 1px solid #E7E9FC;
     border-top: none;
 }
 
@@ -480,7 +480,6 @@ img {
 .form-footer {
     display: flex;
     gap: 24px;
-
 }
 
 .input-form-footer {
