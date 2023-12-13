@@ -696,7 +696,7 @@ text-align: left;
 }
 /* ================= /FOOTER-TABLET =================*/
 }
-/* ================= HEADER-DESCKTOP =================*/
+/* ================= HEADER-DESCKTOP ==================*/
 @media screen and (min-width: 1158px) {
     .container {
 
