@@ -190,6 +190,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
     font-weight: 500;
 }
 
+
 /* ================= /CHARACTERISTICS-SECTION2-MOBILE =================*/
 
 /* ================= OUR-TEAM-SECTION3-MOBILE =================*/
@@ -651,7 +652,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1768x) {
 .our-portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 72px;
     column-gap: 24px;
     justify-content: center;
     align-items: center;
@@ -673,9 +673,7 @@ text-align: left;
 }
 .footer .container {
     display: flex;
-    flex-wrap: wrap;
     row-gap: 72px;
-    column-gap: 24px;
     margin-left: 108px;
 }
 .social-media-container .social-list {
@@ -694,13 +692,21 @@ text-align: left;
 .form-footer-btn {
     margin: 0;
 }
-.
-/* ================= /FOOTER-TABLET =================*/
 }
+
+/* ================= /FOOTER-TABLET =================*/
+
 /* ================= HEADER-DESCKTOP =================*/
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-photo-desctop@2x.jpg);
+    }
 @media screen and (min-width: 1158px) {
     .container {
-
         max-width: 1440px;
     }
 
@@ -708,14 +714,9 @@ text-align: left;
         flex-direction: row;
         gap: 40px;
     }
-}
-
 /* ================= /HEADER-DESCKTOP =================*/
 
-
-
 /* ================= HERO_SECTION-DESCTOP =================*/
-@media screen and (min-width: 1158px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -727,18 +728,72 @@ text-align: left;
     .hero-text {
         margin-bottom: 48px;
     }
+
 }
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
-screen and (min-resolution: 2dppx) and (min-width: 1158px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-    .hero-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/hero-photo-desctop@2x.jpg);
-    }
+/* ================= /HERO_SECTION-DESCTOP =================*/
+
+/* ================= CHARACTERISTICS-SECTION2-DESCTOP =================*/
+/* .benefits {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
+.section-pad {
+    padding: 120px 0;
+}
+.benefits-item {
+    width: calc((100% - 72px) / 4);
+    width: 264px;
 }
 
-/* ================= /HERO_SECTION-DESCTOP =================*/
+.icons-second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+}
+
+.characteristics-name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.characteristics-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-weight: 400;
+}
+/* ================= /CHARACTERISTICS-SECTION2-DESCTOP =================*/
+
+/* ================= FOOTER-DESCTOP =================*/
+.footer .container {
+    margin-left: 156px;
+}
+.social-media-container {
+    margin-left: 120px;
+}
+.wraper-form-footer {
+    margin-left: 80px;
+}
+
+/* ================= /FOOTER-DESCTOP =================*/
+}
+
 
 /* ================= BACKDROP-MOBILE =================*/
 .backdrop {
