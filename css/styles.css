@@ -694,24 +694,21 @@ text-align: left;
 .form-footer-btn {
     margin: 0;
 }
-/* ================= /FOOTER-TABLET =================*/
 }
+/* ================= /FOOTER-TABLET =================*/
+
 /* ================= HEADER-DESCKTOP ==================*/
-@media screen and (min-width: 1158px) {
-    .container {
-
-        max-width: 1440px;
-    }
-
-    .page-header-container .address .menu-list {
-        flex-direction: row;
-        gap: 40px;
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-photo-desctop@2x.jpg);
     }
 }
 
 /* ================= /HEADER-DESCKTOP =================*/
-
-
 
 /* ================= HERO_SECTION-DESCTOP =================*/
 @media screen and (min-width: 1158px) {
@@ -726,19 +723,145 @@ text-align: left;
     .hero-text {
         margin-bottom: 48px;
     }
-}
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
-screen and (min-resolution: 2dppx) and (min-width: 1158px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-    .hero-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/hero-photo-desctop@2x.jpg);
+    .container {
+        min-width: 1158px;
     }
-}
+
+    .page-header-container .address .menu-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
 
 /* ================= /HERO_SECTION-DESCTOP =================*/
 
+/* ================= CHARACTERISTICS-SECTION2-DESCTOP =================*/
+.section-pad {
+    padding: 120px 0;
+}
+
+.benefits {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-item {
+    width: calc((100% - 72px) / 4);
+    width: 264px;
+}
+.icons-second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+}
+.characteristics-name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.characteristics-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-weight: 400;
+}
+/* ================= /CHARACTERISTICS-SECTION2-DESCTOP =================*/
+
+/* ================= /OUR-TEAM-SECTION3-DESCTOP =================*/
+
+.our-team-section {
+    background-color: #F4F4FD;
+}
+.photo-workers {
+    display: flex;
+    flex-direction: row;
+    width: calc((100% - 72px) / 4);
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.photo-workers .name-text {
+    text-align: center;
+}
+/* ================= /OUR-TEAM-SECTION3-DESCTOP =================*/
+
+/* ================= OUR-PORTFOLIO-SECTION4-DESCTOP =================*/
+
+.our-portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    }
+    .our-portfolio-list .list-item {
+    width: calc((100% - 48px) / 3);
+    }
+/* ================= OUR-PORTFOLIO-SECTION4-DESCTOP =================*/
+
+/* ================= FOOTER-DESCTOP =================*/
+.footer .container {
+    display: flex;
+    align-items: baseline;
+   
+}
+.logo-text-container {
+    margin-right: 120px;
+}
+.footer .social-list {
+    gap: 16px;
+}
+
+.wraper-form-footer {
+    margin-left: 80px;
+}
+
+.p-form-footer {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.form-footer {
+    display: flex;
+    gap: 24px;
+}
+.form-footer-btn {
+    margin-top: 0;
+}
+.logo-text-container, .sm-text {
+    text-align: left;
+}
+/* ================= FOOTER-DESCTOP =================*/
+}
 /* ================= BACKDROP-MOBILE =================*/
 .backdrop {
     position: fixed;
