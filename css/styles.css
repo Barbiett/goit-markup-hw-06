@@ -624,6 +624,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1768x) {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
 }
 .benefits-item {
     width: calc((100% - 24px) / 2);
