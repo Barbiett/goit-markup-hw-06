@@ -444,7 +444,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-footer-btn-svg {
@@ -583,27 +584,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
     }
 
     /* ================= /BACKDROP-TABLET =================*/
-}
+
 
 /* ================= /HEADER-TABLET =================*/
 
-/* ================= HEADER-DESCKTOP =================*/
-@media screen and (min-width: 1158px) {
-    .container {
-
-        max-width: 1440px;
-    }
-
-    .page-header-container .address .menu-list {
-        flex-direction: row;
-        gap: 40px;
-    }
-}
-
-/* ================= /HEADER-DESCKTOP =================*/
-
 /* ================= HERO_SECTION-TABLET =================*/
-@media screen and (min-width: 768px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -628,16 +613,113 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1768x) {
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero-photo-tablet@2x.jpg);
     }
-}
+
 
 /* ================= /HERO_SECTION-TABLET =================*/
+
+/* ================= CHARACTERISTICS-SECTION2-TABLET =================*/
+.benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.benefits-item {
+    width: calc((100% - 24px) / 2);
+}
+.characteristics-name {
+    text-align: left;
+}
+/* ================= /CHARACTERISTICS-SECTION2-TABLET =================*/
+
+/* ================= OUR-TEAM-SECTION3-TABLET =================*/
+.photo-workers {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} 
+.our-team-section .characteristics-name {
+    text-align: center;
+}
+/* ================= OUR-TEAM-SECTION3-TABLET =================*/
+
+/* ================= OUR-PORTFOLIO-SECTION4-TABLET =================*/
+.our-portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.our-portfolio-list .list-item {
+    max-width: 356px;
+    width: calc((100% - 24px) / 2);
+}
+/* ================= /OUR-PORTFOLIO-SECTION4-TABLET =================*/
+
+/* ================= FOOTER-TABLET =================*/
+.logo-text-container {
+text-align: left;
+}
+.footer-text {
+    width: 264px;
+    margin-bottom: 0;
+}
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    margin-left: 108px;
+}
+.social-media-container .social-list {
+    gap: 16px;
+}
+.p-form-footer {
+    margin-top: 0;
+}
+.sm-text, .p-form-footer {
+    text-align: left;
+}
+.form-footer {
+    display: flex;
+    gap: 24px;
+}
+.form-footer-btn {
+    margin: 0;
+}
+.
+/* ================= /FOOTER-TABLET =================*/
+}
+/* ================= HEADER-DESCKTOP =================*/
+@media screen and (min-width: 1158px) {
+    .container {
+
+        max-width: 1440px;
+    }
+
+    .page-header-container .address .menu-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+/* ================= /HEADER-DESCKTOP =================*/
+
+
 
 /* ================= HERO_SECTION-DESCTOP =================*/
 @media screen and (min-width: 1158px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url("../images/hero-photo.jpg");
+            url("../images/hero-photo-desctop.jpg");
         max-width: 1440px;
         padding: 188px 0;
     }
@@ -646,7 +728,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1768x) {
         margin-bottom: 48px;
     }
 }
-
 @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
 screen and (min-resolution: 2dppx) and (min-width: 1158px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
@@ -899,10 +980,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .address {
         display: none;
     }
-
-    .icons-second-section {
-        display: none;
-    }
     /* ================= MODAL-WINDOW-MOBILE =================*/
     /* ????????????????? */
     .mobile-svg-open-button {
@@ -979,3 +1056,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     }
 }
 /* ================= /MODAL-WINDOW-MOBILE =================*/
+@media screen and (max-width: 1157px) {
+    .icons-second-section {
+            display: none;
+        }
+}
