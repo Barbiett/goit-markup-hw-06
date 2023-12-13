@@ -354,6 +354,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
 }
 
 .footer-main-link {
+    font-family: Raleway;
     color: #4D5AE5;
     font-size: 18px;
     font-weight: 700;
@@ -694,6 +695,10 @@ text-align: left;
 .form-footer-btn {
     margin: 0;
 }
+.backdrop .modal {
+    min-width: 408px;
+    height: 584px;
+}
 }
 /* ================= /FOOTER-TABLET =================*/
 
@@ -825,10 +830,12 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 /* ================= OUR-PORTFOLIO-SECTION4-DESCTOP =================*/
 
 /* ================= FOOTER-DESCTOP =================*/
+.footer {
+    padding: 100px 0;
+}
 .footer .container {
     display: flex;
     align-items: baseline;
-   
 }
 .logo-text-container {
     margin-right: 120px;
@@ -840,6 +847,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 .wraper-form-footer {
     margin-left: 80px;
 }
+.footer-text {
+    margin-bottom: 0;
+    width: 264px;
+}
 
 .p-form-footer {
     font-size: 16px;
@@ -849,6 +860,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     text-align: left;
     color: #FFFFFF;
     margin-bottom: 16px;
+    margin-top: 0;
 }
 .form-footer {
     display: flex;
@@ -893,8 +905,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     border-radius: 4px;
     background: #fcfcfc;
     width: 288px;
-    border: 1px solid #000;
     min-height: 623px;
+    border: 1px solid #000;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1006,10 +1018,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     fill: #4D5AE5;
 }
 
-.texterea-wraper {
-    margin-bottom: 16px;
-}
-
 .textarea {
     display: block;
     resize: none;
@@ -1032,17 +1040,18 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.04em;
     margin-top: 16px;
     line-height: 1.17;
 }
 
 .form-own-checkbox {
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    width: 16px;
+    min-width: 16px;
     height: 16px;
     border: 1px solid;
     border-radius: 2px;
@@ -1129,6 +1138,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 
     .menu-mobile-container {
         position: relative;
+        max-height: 640px;
     }
 
     .mobile-menu {
