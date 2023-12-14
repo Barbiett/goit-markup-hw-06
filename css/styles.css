@@ -34,6 +34,8 @@ a {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 * ::before::after {
@@ -89,7 +91,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
 }
 /* ================= /HEADER-MOBILE =================*/
 
@@ -97,14 +98,13 @@ img {
 /* ?????????????????????????? */
 .hero-section {
     background-color: #2E2F42;
-    min-width: 288px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url("../images/hero-photo-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 72px 16px;
+    padding: 72px 0;
     margin: 0 auto;
 }
 
@@ -118,12 +118,11 @@ img {
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    max-width: 288px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-bottom: 72px;
-
+    max-width: 200px;
 }
 
 .button {
@@ -255,7 +254,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 72px;
 }
 
 .info-workers {
@@ -458,7 +457,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
 /* ================= HEADER-TABLET =================*/
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 738px;
+        max-width: 768px;
     }
 
     .mobile-svg-open-button {
@@ -471,10 +470,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
 
     .modal-menu-wraper {
         display: none;
-    }
-
-    .page-header-container {
-        height: 72px;
     }
 
     .header:hover,
@@ -506,8 +501,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
         display: flex;
         gap: 40px;
         align-items: center;
-        padding-top: 24px;
-        padding-bottom: 24px;
     }
 
     .accent {
@@ -515,6 +508,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
     }
 
     .link {
+        display: block;
         color: #2E2F42;
         font-weight: 500;
         text-decoration: none;
@@ -594,7 +588,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767x) {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url("../images/hero-photo-tablet.jpg");
-        max-width: 768px;
         padding: 112px 0;
     }
 
@@ -699,6 +692,9 @@ text-align: left;
     min-width: 408px;
     height: 584px;
 }
+.input-form-footer {
+    width: 264px;
+}
 }
 /* ================= /FOOTER-TABLET =================*/
 
@@ -717,6 +713,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 
 /* ================= HERO_SECTION-DESCTOP =================*/
 @media screen and (min-width: 1158px) {
+    .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -796,11 +797,13 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 .photo-workers {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     width: calc((100% - 72px) / 4);
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
     align-items: center;
+}
+.info-workers {
+    min-width: 264px;
 }
 .social-list {
     display: flex;
@@ -835,10 +838,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 .footer .container {
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
-}
-.logo-text-container {
-    margin-right: 120px;
+    margin-left: 0;
+    gap: unset;
 }
 .footer .social-list {
     gap: 16px;
@@ -871,6 +874,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 .logo-text-container, .sm-text {
     text-align: left;
+}
+.social-media-container {
+    margin-left: 120px;
 }
 /* ================= FOOTER-DESCTOP =================*/
 }
@@ -1139,20 +1145,28 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .menu-mobile-container {
         position: relative;
         max-height: 640px;
+        padding: 72px 16px 40px;
     }
 
     .mobile-menu {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding-top: 72px;
         font-size: 36px;
         font-weight: 700;
         line-height: 40px;
         letter-spacing: 0.72px;
         text-transform: capitalize;
     }
-
+    .mobile-menu-link {
+        color: #2E2F42;
+    }
+    .mobile-menu-link-first {
+        color: #404BBF;
+    }
+    .mobile-menu-social-link-first {
+        color: #4D5AE5;
+    }
     .mobile-menu-social-list {
         margin-top: 168px;
         display: flex;
