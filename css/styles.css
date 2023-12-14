@@ -755,7 +755,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 
 .benefits-item {
-    width: calc((100% - 72px) / 4);
+    
     width: 264px;
 }
 .icons-second-section {
@@ -789,18 +789,21 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 }
 /* ================= /CHARACTERISTICS-SECTION2-DESCTOP =================*/
 
-/* ================= /OUR-TEAM-SECTION3-DESCTOP =================*/
+/* ================= OUR-TEAM-SECTION3-DESCTOP =================*/
 
 .our-team-section {
     background-color: #F4F4FD;
+}
+.container-benefits {
+
 }
 .photo-workers {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: calc((100% - 72px) / 4);
     justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 .info-workers {
     min-width: 264px;
@@ -840,8 +843,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    margin-left: 0;
     gap: unset;
+
 }
 .footer .social-list {
     gap: 16px;
