@@ -693,7 +693,7 @@ text-align: left;
     height: 584px;
 }
 .input-form-footer {
-    width: 264px;
+    max-width: 264px;
 }
 }
 /* ================= /FOOTER-TABLET =================*/
@@ -871,6 +871,16 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 .form-footer {
     display: flex;
     gap: 24px;
+}
+.form-footer-label {
+    border-radius: 4px;
+    border: 1px solid #FFF;
+}
+.input-form-footer::placeholder {
+    color: #FFF;
+}
+.input-form-footer {
+    width: 264px;
 }
 .form-footer-btn {
     margin-top: 0;
